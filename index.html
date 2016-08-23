@@ -3,10 +3,20 @@
   <head>
     <title>Magic: The Gathering</title>
     <style type='text/css'>
-      body {
-        background-color: powderblue;
+      body { margin: 0; }
+      #main {
+        background-color: peru;
         font-family: fantasy;
-        font: rgb(179, 60, 0);}
+        font: black;
+        background-image: url('pictures/dragon.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        background-attachment: fixed;
+        padding-left: 30px;
+        padding-top: 30px;
+        margin: 0;
+        }
       h1 {
         font-family: fantasy;
         font-weight: bolder;
@@ -16,85 +26,135 @@
         text-align:center;}
       .bordered_image {
         border: 2px solid black;}
+      div.content {
+        height: auto;
+        width: 800px;
+        background-color: hsla(360, 100%, 100%, .2);
+        padding: 10px;}
+      ul.header {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;}
+      ul.header li {
+        float: left;}
+      ul.header li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;}
+      ul.header li a:hover {
+        background-color: #111;}
     </style>
   </head>
   <body>
-    <img src="pictures/transparent_mtg_logo.gif" height='175' width='500' alt="MTG Logo" title="The logo used since the game began."/>
-    <p style='font-size:130%'>Magic: The Gathering (MTG; also known as Magic) is a trading card game <br />
-      created by Richard Garfield. First published in 1993 by Wizards of the Coast, <br />
-      Magic was the first trading card game produced and it continues to thrive, <br />
-      with approximately twenty million players and over 13,000 unique cards as of 2015.</p>
-    <br /><hr /><br />
-    <h1><b><u>A Card Explained</u></b></h1>
-    <img src='pictures/mtg-anatomy.jpeg' alt='Anatomy of a card' title='The standard creature card explained.'/>
-    <hr /><br />
-    <h1><b><u>Board Structure and Zones</u></b></h1>
-    <img src='pictures/zones.jpeg' class='bordered_image' height='450' width='700' alt='How the board is set up' title='Board organization can differ slightly, but this is a good template.'/>
-    <hr /><br />
-    <h1><b><u>Steps of a Turn</u></b></h1>
-    <img src='pictures/mtg_turns.jpeg' class='bordered_image' height='750' width='500' alt="Explanation of the steps in a player's turn." title='The dynamics of a turn are one reason that the complex rules system works so well.'/>
-    <hr /><br />
-    <h1><b><u>The Pro Tour</u></b></h1>
-    <p style='font-size:130%'>The Pro Tour is the highest form of competitive play for Magic: The Gathering. It consists of a <br />
-      series of tournaments held throughout the world, each requiring an invitation to participate. <br />
-      Every Pro Tour awards a total of $250,000 in cash prizes, with $40,000 going to the winner. <br />
-      Pro Tour competitors also receive Pro Points, the amount depending on their results. Pro <br />
-      Points award special benefits to players, including automatic qualification and travel awards <br />
-      for subsequent Pro Tours. Currently, four Pro Tours are held during a twelve-month season.</p>
-    <table style='font-size:130%'>
-      <tr>
-        <th scope='col'>Place</th>
-        <th scope='col'>Payout</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>$40,000</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>$20,000</td>
-      </tr>
-      <tr>
-        <td>3-4</td>
-        <td>$12,500</td>
-      </tr>
-      <tr>
-        <td>5-8</td>
-        <td>$10,000</td>
-      </tr>
-      <tr>
-        <td>9-16</td>
-        <td>$5000</td>
-      </tr>
-      <tr>
-        <td>17-25</td>
-        <td>$2500</td>
-      </tr>
-      <tr>
-        <td>26-50</td>
-        <td>$1500</td>
-      </tr>
-      <tr>
-        <td>51-75</td>
-        <td>$1000</td>
-      </tr>
-      <tr>
-        <td>76+</td>
-        <td>$0</td>
-      </tr>
-    </table>
-    <hr /><br />
-    <h1><b><u>The (Painful) Truth</u></b></h1>
-    <img src='pictures/comic.gif' class='bordered_image' height='750' width='500' alt="MTG Comic." title='Any seasoned player can attest to this.'/>
-    <hr /><br />
-    <h1><b><u>Helpful Links</u></b></h1>
-    <ul style='font-size:130%'>
-      <li><a href='http://magic.wizards.com/en/content/history'>History of the Game</a></li>
-      <li><a href="http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/formats">Formats</a></li>
-      <li><a href="http://magic.wizards.com/en/game-info/products/card-set-archive">Magic Sets</a></li>
-      <li><a href="http://mtg.wikia.com/wiki/Rules">Rules of Magic</a></li>
-      <li><a href="https://www.mtggoldfish.com/prices/paper/standard">The Ever-Changing Market</a></li>
-      <li><a href="http://cardboard-crack.com/">More Magic Comics</a></li>
+    <nav>
+    <ul class='header'>
+      <li><a href=#card_parts>A Card Explained</a></li>
+      <li><a href=#zones>Board Zones</a></li>
+      <li><a href=#steps>Steps of a Turn</a></li>
+      <li><a href=#competitive>Competitive Playing</a></li>
+      <li><a href=#comic>Comic</a></li>
+      <li><a href=#help>Links</a></li>
     </ul>
+  </nav>
+    <div id="main">
+    <img src="pictures/mtg2.png" alt="MTG Logo" title="The logo used since the game began."/>
+    <div class='intro content'>
+      <p style='font-size:130%'>Magic: The Gathering (MTG; also known as Magic) is a trading card game
+        created by Richard Garfield. First published in 1993 by Wizards of the Coast,
+        Magic was the first trading card game produced and it continues to thrive,
+        with approximately twenty million players and over 13,000 unique cards as of 2015.</p>
+    </div>
+    <br /><br />
+    <div id='card_parts' class='card_anatomy content'>
+      <h1><b><u>A Card Explained</u></b></h1>
+      <img src='pictures/mtg-anatomy.jpeg' alt='Anatomy of a card' title='The standard creature card explained.'/>
+    </div>
+    <br />
+    <div class='zones content' id='zones'>
+      <h1><b><u>Board Structure and Zones</u></b></h1>
+      <img src='pictures/zones.jpeg' class='bordered_image' height='450' width='700' alt='How the board is set up' title='Board organization can differ slightly, but this is a good template.'/>
+    </div>
+    <br />
+    <div class='steps content' id='steps'>
+      <h1><b><u>Steps of a Turn</u></b></h1>
+      <img src='pictures/mtg_turns.jpeg' class='bordered_image' height='750' width='500' alt="Explanation of the steps in a player's turn." title='The dynamics of a turn are one reason that the complex rules system works so well.'/>
+    </div>
+    <br />
+    <div class='competitive content' id='competitive'>
+      <h1><b><u>The Pro Tour</u></b></h1>
+      <p style='font-size:130%'>The Pro Tour is the highest form of competitive play for Magic: The Gathering. It consists of a
+        series of tournaments held throughout the world, each requiring an invitation to participate.
+        Every Pro Tour awards a total of $250,000 in cash prizes, with $40,000 going to the winner.
+        Pro Tour competitors also receive Pro Points, the amount depending on their results. Pro
+        Points award special benefits to players, including automatic qualification and travel awards
+        for subsequent Pro Tours. Currently, four Pro Tours are held during a twelve-month season.</p>
+      <table style='font-size:130%'>
+        <tr>
+          <th scope='col'>Place</th>
+          <th scope='col'>Payout</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>$40,000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>$20,000</td>
+        </tr>
+        <tr>
+          <td>3-4</td>
+          <td>$12,500</td>
+        </tr>
+        <tr>
+          <td>5-8</td>
+          <td>$10,000</td>
+        </tr>
+        <tr>
+          <td>9-16</td>
+          <td>$5000</td>
+        </tr>
+        <tr>
+          <td>17-25</td>
+          <td>$2500</td>
+        </tr>
+        <tr>
+          <td>26-50</td>
+          <td>$1500</td>
+        </tr>
+        <tr>
+          <td>51-75</td>
+          <td>$1000</td>
+        </tr>
+        <tr>
+          <td>76+</td>
+          <td>$0</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <div class='comedic_relief content' id='comic'>
+      <h1><b><u>The (Painful) Truth</u></b></h1>
+      <img src='pictures/comic.gif' class='bordered_image' height='750' width='500' alt="MTG Comic." title='Any seasoned player can attest to this.'/>
+    </div>
+    <br />
+    <div class='links content' id="help">
+      <h1><b><u>Helpful Links</u></b></h1>
+      <ul style='font-size:130%'>
+        <li><a href='http://magic.wizards.com/en/content/history'>History of the Game</a></li>
+        <li><a href="http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/formats">Formats</a></li>
+        <li><a href="http://magic.wizards.com/en/game-info/products/card-set-archive">Magic Sets</a></li>
+        <li><a href="http://mtg.wikia.com/wiki/Rules">Rules of Magic</a></li>
+        <li><a href="https://www.mtggoldfish.com/prices/paper/standard">The Ever-Changing Market</a></li>
+        <li><a href="http://cardboard-crack.com/">More Magic Comics</a></li>
+      </ul>
+    </div>
+  </div>
   </body>
 </html>
