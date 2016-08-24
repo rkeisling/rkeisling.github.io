@@ -2,55 +2,7 @@
 <html>
   <head>
     <title>Magic: The Gathering</title>
-    <style type='text/css'>
-      body { margin: 0; }
-      #main {
-        background-color: peru;
-        font-family: fantasy;
-        font: black;
-        background-image: url('pictures/dragon.png');
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-        background-attachment: fixed;
-        padding-left: 30px;
-        padding-top: 30px;
-        margin: 0;
-        }
-      h1 {
-        font-family: fantasy;
-        font-weight: bolder;
-        font-stretch: expanded;}
-      table, th, td {
-        border: 2px solid black;
-        text-align:center;}
-      .bordered_image {
-        border: 2px solid black;}
-      div.content {
-        height: auto;
-        width: 800px;
-        background-color: hsla(360, 100%, 100%, .2);
-        padding: 10px;}
-      ul.header {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        width: 100%;}
-      ul.header li {
-        float: left;}
-      ul.header li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;}
-      ul.header li a:hover {
-        background-color: #111;}
-    </style>
+    <link href='mtg_css_file.css' type='text/css' rel='stylesheet' />
   </head>
   <body>
     <nav>
@@ -62,11 +14,11 @@
       <li><a href=#comic>Comic</a></li>
       <li><a href=#help>Links</a></li>
     </ul>
-  </nav>
+    </nav>
     <div id="main">
     <img src="pictures/mtg2.png" alt="MTG Logo" title="The logo used since the game began."/>
     <div class='intro content'>
-      <p style='font-size:130%'>Magic: The Gathering (MTG; also known as Magic) is a trading card game
+      <p>Magic: The Gathering (MTG; also known as Magic) is a trading card game
         created by Richard Garfield. First published in 1993 by Wizards of the Coast,
         Magic was the first trading card game produced and it continues to thrive,
         with approximately twenty million players and over 13,000 unique cards as of 2015.</p>
@@ -89,13 +41,13 @@
     <br />
     <div class='competitive content' id='competitive'>
       <h1><b><u>The Pro Tour</u></b></h1>
-      <p style='font-size:130%'>The Pro Tour is the highest form of competitive play for Magic: The Gathering. It consists of a
+      <p>The Pro Tour is the highest form of competitive play for Magic: The Gathering. It consists of a
         series of tournaments held throughout the world, each requiring an invitation to participate.
         Every Pro Tour awards a total of $250,000 in cash prizes, with $40,000 going to the winner.
         Pro Tour competitors also receive Pro Points, the amount depending on their results. Pro
         Points award special benefits to players, including automatic qualification and travel awards
         for subsequent Pro Tours. Currently, four Pro Tours are held during a twelve-month season.</p>
-      <table style='font-size:130%'>
+      <table class='payout'>
         <tr>
           <th scope='col'>Place</th>
           <th scope='col'>Payout</th>
@@ -146,7 +98,7 @@
     <br />
     <div class='links content' id="help">
       <h1><b><u>Helpful Links</u></b></h1>
-      <ul style='font-size:130%'>
+      <ul class='linklist'>
         <li><a href='http://magic.wizards.com/en/content/history'>History of the Game</a></li>
         <li><a href="http://magic.wizards.com/en/game-info/gameplay/rules-and-formats/formats">Formats</a></li>
         <li><a href="http://magic.wizards.com/en/game-info/products/card-set-archive">Magic Sets</a></li>
