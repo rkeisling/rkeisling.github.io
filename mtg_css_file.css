@@ -1,15 +1,15 @@
 body { margin: 0; }
 #main {
   background-color: peru;
-  font-family: fantasy;
+  font-family: fantasy, lucida;
   font: black;
   background-image: url('pictures/dragon.png');
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding-left: 2%;
+  padding-top: 2%;
   margin: 0;
   }
 h1 {
@@ -23,10 +23,10 @@ table, th, td {
   border: 2px solid black;}
 div.content {
   height: auto;
-  width: 800px;
+  width: 65%;
   background-color: hsla(360, 100%, 100%, .2);
-  padding: 10px;}
-ul.header {
+  padding: 1%;}
+ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -35,20 +35,32 @@ ul.header {
   position: fixed;
   top: 0;
   width: 100%;}
-ul.header li {
+ul.navbar li {
   float: left;}
-ul.header li a {
+ul.navbar li a {
+  font: Helvetica;
   font-size: 110%;
   display: block;
-  color: white;
+  color: orange;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;}
-ul.header li a:hover {
-  background-color: #111;}
+ul.navbar li a:hover {
+  background-color: #111;
+  text-decoration: underline;}
 p {
   font-size: 130%;}
 table.payout {
   font-size: 130%;}
 ul.linklist {
   font-size: 130%;}
+a:link {
+  color: white;
+  text-decoration: underline;}
+a:visited {
+  color: #4d3319;}
+a:hover {
+  color: #cc0000;
+  text-decoration: underline;}
+a:active: {
+  color: #ffcc00;}
