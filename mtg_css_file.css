@@ -52,7 +52,7 @@ p {
   font-size: 130%;}
 table.payout {
   font-size: 130%;}
-ul.linklist {
+ul.list {
   font-size: 130%;}
 a:link {
   color: white;
@@ -64,3 +64,15 @@ a:hover {
   text-decoration: underline;}
 a:active: {
   color: #ffcc00;}
+#white {
+  list-style-image: url('pictures/white.ico');}
+#blue {
+  list-style-image: url('pictures/blue.ico');}
+#black {
+  list-style-image: url('pictures/black.ico');}
+#red {
+  list-style-image: url('pictures/red.ico');}
+#green {
+  list-style-image: url('pictures/green.ico');}
+ul.colors {
+  margin-left: 3%;}
