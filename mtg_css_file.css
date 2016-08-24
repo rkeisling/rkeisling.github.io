@@ -1,0 +1,54 @@
+body { margin: 0; }
+#main {
+  background-color: peru;
+  font-family: fantasy;
+  font: black;
+  background-image: url('pictures/dragon.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-attachment: fixed;
+  padding-left: 30px;
+  padding-top: 30px;
+  margin: 0;
+  }
+h1 {
+  font-family: fantasy;
+  font-weight: bolder;
+  font-stretch: expanded;}
+table, th, td {
+  border: 2px solid black;
+  text-align:center;}
+.bordered_image {
+  border: 2px solid black;}
+div.content {
+  height: auto;
+  width: 800px;
+  background-color: hsla(360, 100%, 100%, .2);
+  padding: 10px;}
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;}
+ul.header li {
+  float: left;}
+ul.header li a {
+  font-size: 110%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+ul.header li a:hover {
+  background-color: #111;}
+p {
+  font-size: 130%;}
+table.payout {
+  font-size: 130%;}
+ul.linklist {
+  font-size: 130%;}
