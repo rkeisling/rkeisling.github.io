@@ -51,10 +51,14 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#ServicesModal">
+                        Services
+                      </button>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#ContactModal">
+                        Contact
+                      </button>
                     </li>
                 </ul>
             </div>
@@ -62,7 +66,46 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <div id="ContactModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Phone: (662) 380-1096
+              <br />
+              Email: rickykeisling@gmail.com
+              <br />
+              External Link: <a href="http://store.tcgplayer.com/help/contactus">TCG</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ServicesModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Services</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              There's cards and card products on this webpage. We sell them. That's it.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Page Content -->
     <div class="container">
 

@@ -5,3 +5,10 @@ div.pricebox {
     box-shadow: 10px 10px 5px #888888;
     padding: 2%;
 }
+h4 {
+  padding: 5%;
+}
+button {
+  margin: 10%;
+  padding: 10%;
+}
