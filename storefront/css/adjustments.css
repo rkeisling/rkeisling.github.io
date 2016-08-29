@@ -8,7 +8,6 @@ div.pricebox {
 h4 {
   padding: 5%;
 }
-button {
-  margin: 10%;
-  padding: 10%;
+button.openbtn {
+  margin-top: 10px;
 }
